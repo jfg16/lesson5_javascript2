@@ -110,8 +110,8 @@ function calculateTax(){
                }//end of else if
                else {
                   tax = 19050 * 0.10 + (77400 - 19050) * 0.12 +
-                        (165000 - 77400) * 0.22 + (157500 - 1650001) * 0.24 +
-                        (200000 - 157500) * 0.32 + (500000 - 200000 ) * 0.35 + (income - 500000) * .37;
+                        (165000 - 77400) * 0.22 + (315000 - 165000) * 0.24 +
+                        (400000 - 315000) * 0.32 + (600000 - 400000 ) * 0.35 + (income - 600000) * .37;
                   taxRate = 37;
                }//end of nested if
                 
@@ -297,10 +297,8 @@ function clearButton () {
               document.getElementById("filingStatus").selectedIndex = 0;
               
              //INSERT YOUR CODE BELOW
-
-
-
-
-
+             document.getElementById("taxEstimate").innerHTML = "";
+             document.getElementById("taxBracket").innerHTML = "";
+             
 }//end of clearButton function
       
